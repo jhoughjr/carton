@@ -63,7 +63,7 @@ extension WebSocket: Hashable {
   }
 }
 
-public actor Server {
+public class Server {
   /// Used for decoding `Event` values sent from the WebSocket client.
   private let decoder = JSONDecoder()
 
